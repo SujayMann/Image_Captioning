@@ -35,3 +35,5 @@ def main():
     pages = st.navigation([info, generate])
     pages.run()
     
+if __name__ == '__main__':
+    main()
