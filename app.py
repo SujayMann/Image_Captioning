@@ -28,7 +28,7 @@ def generate_page():
 
         caption = processor.decode(outputs[0], skip_special_tokens=True)
 
-        st.write(caption)
+        st.write(f'Generated Caption: {caption}')
 
 def main():
     info = st.Page(info_page, title='Home', icon=':material/home:')
