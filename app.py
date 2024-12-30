@@ -1,6 +1,8 @@
 import streamlit as st
 from transformers import BlipProcessor, BlipForConditionalGeneration
 
+st.write(st.__version__)
+
 processor = BlipProcessor.from_pretrained('Salesforce/blip-image-captioning-base')
 model = BlipForConditionalGeneration.from_pretrained('Salesforce/blip-image-captioning-base')
 
