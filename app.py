@@ -32,7 +32,7 @@ def generate_page():
 
 def main():
     info = st.Page(info_page, title='Home', icon='🏠')
-    generate = st.Page(generate_page, title='Generate', icon='📃')
+    generate = st.Page(generate_page, title='Caption Generator', icon='📃')
     pages = st.navigation([info, generate])
     pages.run()
     
