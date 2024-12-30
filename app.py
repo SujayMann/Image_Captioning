@@ -31,7 +31,7 @@ def generate_page():
         st.write(f'Generated Caption: {caption}')
 
 def main():
-    info = st.Page(info_page, title='Home', icon=':material/home:')
+    info = st.Page(info_page, title='Home', icon='🏠')
     generate = st.Page(generate_page, title='Generate', icon='📃')
     pages = st.navigation([info, generate])
     pages.run()
