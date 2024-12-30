@@ -31,7 +31,7 @@ def generate_page():
 
 def main():
     info = st.Page(info_page, title='Home', icon=':material/home:')
-    generate = st.Page(generate_page, title='Generate', icon=':material/page_with_curl:')
+    generate = st.Page(generate_page, title='Generate', icon=':page_with_curl:')
     pages = st.navigation([info, generate])
     pages.run()
     
