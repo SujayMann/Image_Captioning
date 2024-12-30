@@ -1,8 +1,6 @@
 import streamlit as st
 from transformers import BlipProcessor, BlipForConditionalGeneration
 
-st.write(st.__version__)
-
 processor = BlipProcessor.from_pretrained('Salesforce/blip-image-captioning-base')
 model = BlipForConditionalGeneration.from_pretrained('Salesforce/blip-image-captioning-base')
 
@@ -33,7 +31,7 @@ def generate_page():
 
 def main():
     info = st.Page(info_page, title='Home', icon=':material/home:')
-    generate = st.Page(generate_page, title='Generate', icon=':material/page_with_curl:')
+    generate = st.Page(generate_page, title='Generate', icon='📃')
     pages = st.navigation([info, generate])
     pages.run()
     
