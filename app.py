@@ -16,9 +16,9 @@ def info_page():
     """)
 
 def generate_page():
-    img_path = st.file_uploader(label=['Image'], type=['png', 'jpg', 'jpeg'])
+    img_path = st.file_uploader(label='Image', type=['png', 'jpg', 'jpeg'])
 
-    if img_path:
+    if img_path is not None:
         st.image(img_path, caption='Uploaded Image')
         image = Image.open(img_path).convert('RGB')
 
