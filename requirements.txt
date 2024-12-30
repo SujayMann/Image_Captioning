@@ -2,5 +2,3 @@ transformers
 pillow
 streamlit
 torch
-
-torch
